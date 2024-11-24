@@ -1,0 +1,137 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #ffeaf8; /* Latar belakang pink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Wrapper */
+.wrapper {
+  background-color: white; /* Konten utama latar putih */
+  border-radius: 15px;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header */
+header.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, hsl(0, 0%, 100%), #fae7f3);
+
+}
+
+header.navbar-container .logo img {
+  width: 150px;
+  position: absolute;
+}
+
+header.navbar-container .nav-list ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: 0.3s;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row; /* Mengubah menjadi row agar elemen berada berdampingan */
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; /* Memberikan jarak antara teks dan gambar */
+}
+
+main .content {
+  display: flex;
+  flex-direction: row; /* Elemen berdampingan */
+  align-items: center;
+  gap: 3rem; /* Jarak antara teks dan gambar */
+}
+
+.content-description {
+  flex: 1; /* Membuat konten teks lebih fleksibel */
+  text-align: left;
+}
+
+.content-image {
+  flex: 1; /* Membuat gambar juga fleksibel */
+  display: flex;
+  justify-content: center;
+}
+
+.content-image img {
+  width: 300px; /* Lebar gambar */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-description h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.content-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #555;
+  max-width: 800px;}
+
+
+.content-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(45deg, hsl(0, 0%, 100%), #fae7f3);
+
+  font-size: 0.9rem;
+}
+
+.button {
+  display: inline-block;  
+  padding: 1rem;
+  background: linear-gradient(45deg, hsl(0, 0%, 100%), #fae7f3);
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: 6ms;
+}
+
+
